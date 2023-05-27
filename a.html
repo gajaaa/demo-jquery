@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas AJAX dan Manipulasi DOM dengan Javascript</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" />
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+      body {
+        color: #f5f5f5;
+        font-family: "Varela Round", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-dark">
+    <h1 class="text-center mt-5">Repeat Your Word!</h1>
+    <div class="container mt-5 d-flex">
+      <div class="w-50">
+        <div class="p-4 border rounded">
+          <form id="form_id" class="mx-10">
+            <div class="mb-3">
+              <label for="number" class="form-label">Input Number</label>
+              <input type="number" class="form-control" id="number" aria-describedby="noHelp" name="number" required />
+            </div>
+            <div class="mb-3">
+              <label for="text" class="form-label">Input Word</label>
+              <input type="text" class="form-control" id="text" name="text" required />
+            </div>
+            <div class="text-left">
+              <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="container d-flex">
+        <table id="table-data" class="table table-light">
+          <thead>
+            <tr class="border rounded text-center">
+              <th>Index</th>
+              <th>Text</th>
+            </tr>
+          </thead>
+          <tbody class="table-dark text-center"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
